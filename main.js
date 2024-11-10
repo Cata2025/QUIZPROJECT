@@ -56,3 +56,23 @@ function showQuestion() {
     `;
 }
 
+// Mezcla las opciones de respuesta para que la correcta no esté siempre en la misma posición
+function shuffleOptions(options) {
+    return options.sort(() => Math.random() - 0.5);
+}
+
+function checkAnswer(selectedAnswer) {
+    const correctAnswer = questions[currentQuestionIndex].correct_answer;
+    const feedback = document.getElementById('feedback');
+
+    if (selectedAnswer === correctAnswer) {
+        score++;
+        feedback.innerHTML = `<span class="text-success">¡Correcto!</span>`;
+    } else {
+        feedback.innerHTML = `<span class="text-danger">Incorrecto. La respuesta correcta era: ${correctAnswer}</span>`;
+    }
+
+    totalAttempts++;
+    document.querySelectorAll(".option").forEach(button => button.disabled = true);
+    document.querySelector(".next").style.display = "block";
+}
