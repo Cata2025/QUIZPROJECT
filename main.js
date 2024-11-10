@@ -94,6 +94,46 @@ function showResults() {
     renderChart();
 }
 
+function saveResult(score) {
+    resultsHistory.push(score);
+    localStorage.setItem("quizResults", JSON.stringify(resultsHistory));
+}
+
+function renderChart() {
+    const ctx = document.getElementById('resultChart').getContext('2d');
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: resultsHistory.map((_, index) => `Intento ${index + 1}`),
+            datasets: [{
+                label: 'Resultados Anteriores',
+                data: resultsHistory,
+                backgroundColor: 'rgba(0, 123, 255, 0.5)',
+                borderColor: '#007bff',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: questions.length
+                }
+            },
+            plugins: {
+                legend: {
+                    display: true
+                }
+            }
+        }
+    });
+}
+
+
+
+
+
+
 
 
 
