@@ -26,7 +26,6 @@ function startQuiz() {
     fetchQuestions();
 }
 
-// Obtiene las preguntas de la API
 async function fetchQuestions() {
     const response = await fetch(apiUrl);
     const data = await response.json();
@@ -56,7 +55,6 @@ function showQuestion() {
     `;
 }
 
-// Mezcla las opciones de respuesta para que la correcta no esté siempre en la misma posición
 function shuffleOptions(options) {
     return options.sort(() => Math.random() - 0.5);
 }
@@ -128,6 +126,8 @@ function renderChart() {
         }
     });
 }
+
+showWelcomeScreen();
 
 
 
