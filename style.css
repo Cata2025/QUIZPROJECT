@@ -1,0 +1,44 @@
+body {
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 700px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #343a40;
+}
+
+#chart-container {
+    width: 100%;
+    height: 300px;
+}
+
+button.option {
+    margin: 8px 0;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+button.start, button.next {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.result {
+    color: #343a40;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
