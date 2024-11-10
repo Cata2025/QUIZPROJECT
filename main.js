@@ -6,7 +6,6 @@ let totalAttempts = 0;
 
 let resultsHistory = JSON.parse(localStorage.getItem("quizResults")) || [];
 
-// Muestra la pantalla de bienvenida
 function showWelcomeScreen() {
     const appContainer = document.getElementById('app');
     appContainer.innerHTML = `
@@ -27,5 +26,14 @@ function startQuiz() {
     fetchQuestions();
 }
 
-//**Commit**: `Agrega función de pantalla de bienvenida y botón de inicio`
+// Obtiene las preguntas de la API
+async function fetchQuestions() {
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+    questions = data.results;
+    showQuestion();
+}
+
+
+
 
