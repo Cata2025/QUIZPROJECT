@@ -76,3 +76,10 @@ function checkAnswer(selectedAnswer) {
     document.querySelectorAll(".option").forEach(button => button.disabled = true);
     document.querySelector(".next").style.display = "block";
 }
+
+function nextQuestion() {
+    currentQuestionIndex++;
+    showQuestion();
+}
+
+
