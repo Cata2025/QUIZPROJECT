@@ -82,4 +82,18 @@ function nextQuestion() {
     showQuestion();
 }
 
+function showResults() {
+    const questionContainer = document.getElementById('app');
+    questionContainer.innerHTML = `
+        <h2 class="result">Resultados</h2>
+        <p class="result">Respuestas correctas: ${score} de ${questions.length}</p>
+        <p>Intentos realizados: ${totalAttempts}</p>
+        <button class="btn btn-primary start" onclick="startQuiz()">Intentar de nuevo</button>
+    `;
+    saveResult(score);
+    renderChart();
+}
+
+
+
 
