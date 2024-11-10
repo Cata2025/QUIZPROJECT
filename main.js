@@ -34,6 +34,25 @@ async function fetchQuestions() {
     showQuestion();
 }
 
+function showQuestion() {
+    if (currentQuestionIndex >= questions.length) {
+        showResults();
+        return;
+    }
 
-
+    const questionData = questions[currentQuestionIndex];
+    const questionContainer = document.getElementById('app');
+    questionContainer.innerHTML = `
+        <h2>Pregunta ${currentQuestionIndex + 1} de ${questions.length}</h2>
+        <h3>${questionData.question}</h3>
+        <div id="options">
+            ${shuffleOptions([...questionData.incorrect_answers, questionData.correct_answer])
+                .map(option => `<button class="btn btn-outline-primary option" onclick="checkAnswer('${option}')">${option}</button>`)
+                .join('')}
+        </div>
+        <p id="feedback" class="mt-3 text-center"></p>
+        <button class="btn btn-success next" onclick="nextQuestion()" style="display:none;">Siguiente</button>
+        <p class="mt-3">Respuestas correctas: ${score}</p>
+    `;
+}
 
