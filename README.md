@@ -3,6 +3,9 @@ Este proyecto es un cuestionario de conocimientos generales, diseñado como una 
 El cuestionario obtiene las preguntas de la API de Open Trivia Database, permitiendo a los usuarios evaluar su conocimiento a través de diez preguntas seleccionadas de forma aleatoria. 
 Este cuestionario cuenta con una interfaz sencilla de navegación, y almacena los puntajes previos de cada usuario en el almacenamiento local (Local Storage) para consulta posterior.
 
+<img width="710" alt="image" src="https://github.com/user-attachments/assets/db771ccc-4a63-473b-9d66-20eee1b3228f">
+
+
 Incluye una pantalla de bienvenida, opciones de respuesta, retroalimentación inmediata, un historial de resultados y la visualización de puntajes previos en un gráfico.
 
 Funcionalidades
