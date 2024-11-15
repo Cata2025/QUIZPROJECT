@@ -18,7 +18,8 @@ Quiz SPA es una aplicación web que permite a los usuarios participar en cuestio
 
 No se requieren dependencias adicionales ya que las librerías necesarias (Bootstrap y Chart.js) se cargan desde un CDN.
 
-Funcionalidades
+Funcionalidades:
+
 
 Pantalla de Bienvenida: La aplicación inicia mostrando un mensaje de bienvenida y un botón para comenzar el cuestionario. 
 
@@ -44,7 +45,8 @@ Almacenamiento del Historial de Resultados: Los resultados se guardan en el loca
 
 Gráfico de Resultados: Utilizando Chart.js, la aplicación muestra un gráfico de barras que ilustra los puntajes de los intentos previos.
 
-Código
+Código:
+
 
 Variables Principales
 apiUrl: URL de la API de preguntas.
@@ -80,7 +82,8 @@ Axios para realizar las peticiones HTTP.
 Bootstrap 5.3 para la interfaz de usuario.
 Chart.js para mostrar las gráficas de estadísticas.
 
-Instalación
+Instalación:
+
 El presente quiz no es una aplicación que requiera instalación previa, unicamente abre el archivo index.html en un navegador para ejecutarla.
 
 Contribuciones:
