@@ -84,7 +84,7 @@ Chart.js para mostrar las gráficas de estadísticas.
 
 Instalación:
 
-El presente quiz no es una aplicación que requiera instalación previa, unicamente abre el archivo index.html en un navegador para ejecutarla.
+El presente quiz no es una aplicación que requiera instalación previa, unicamente abre el archivo index.html en un navegador para ejecutarlo.
 
 Contribuciones:
 
