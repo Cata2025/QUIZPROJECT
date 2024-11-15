@@ -10,6 +10,8 @@ Incluye una pantalla de bienvenida, opciones de respuesta, retroalimentación in
 
 <img width="710" alt="image" src="https://github.com/user-attachments/assets/db771ccc-4a63-473b-9d66-20eee1b3228f">
 
+
+
 Funcionalidades
 
 Pantalla de Bienvenida: La aplicación inicia mostrando un mensaje de bienvenida y un botón para comenzar el cuestionario. 
@@ -49,7 +51,7 @@ resultsHistory: Historial de puntajes almacenado en localStorage.
 
 Requisitos:
 
-Antes de ejecutar la aplicación, asegúrate de tener lo siguiente:
+Antes de ejecutar la aplicación, asegúrate de contar con lo siguiente:
 
 Un navegador web moderno (por ejemplo, Chrome, Firefox)
 Conocimientos básicos de HTML, CSS y JavaScript
@@ -59,14 +61,9 @@ CSS: Estilos para la interfaz de usuario.
 JavaScript: Lógica de la aplicación y manejo de eventos.
 Axios: Para realizar solicitudes HTTP a la API.
 Bootstrap: Para estilos y diseño responsivo.
-Explicación del Código
 
-HTML (index.html)
+Explicación del Código:
 
-card: Estilos para los componentes de tarjeta.
-quiz-header: Estilos para el encabezado del quiz.
-JavaScript (main.js)
-El archivo JavaScript contiene la lógica del quiz:
 
 Obteniendo Preguntas: La función getQuestions obtiene preguntas de trivia de la API.
 Lógica del Juego: Las funciones manejan el inicio del quiz, la presentación de preguntas, la selección de respuestas y la visualización de resultados.
