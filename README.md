@@ -13,6 +13,7 @@ Incluye una pantalla de bienvenida, opciones de respuesta, retroalimentación in
 
 
 Descripción:
+
 Quiz SPA es una aplicación web que permite a los usuarios participar en cuestionarios de trivia de manera dinámica y sencilla. Los usuarios responden una serie de preguntas de opción múltiple, reciben retroalimentación instantánea sobre sus respuestas y pueden ver un historial de sus intentos en un gráfico de barras, gracias al uso de localStorage y Chart.js para almacenar y visualizar los resultados.
 
 Instalación
