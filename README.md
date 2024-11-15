@@ -46,24 +46,41 @@ score: Puntaje de respuestas correctas.
 totalAttempts: Número total de intentos realizados.
 resultsHistory: Historial de puntajes almacenado en localStorage.
 
-Funciones
 
-showWelcomeScreen: Muestra la pantalla de bienvenida y el gráfico de historial de resultados.
-startQuiz: Inicializa las variables de estado y llama a la función para obtener preguntas de la API.
-fetchQuestions: Realiza una solicitud a la API para obtener preguntas.
-showQuestion: Presenta la pregunta actual y las opciones de respuesta en el DOM.
-shuffleOptions: Mezcla las opciones de respuesta para evitar que la respuesta correcta esté en la misma posición.
-checkAnswer: Verifica si la respuesta seleccionada es correcta, muestra retroalimentación y desactiva las opciones.
-nextQuestion: Avanza a la siguiente pregunta.
-showResults: Muestra el puntaje final y la opción de reiniciar el cuestionario.
-saveResult: Guarda el puntaje en el historial de resultados en localStorage.
-renderChart: Renderiza el gráfico de resultados usando Chart.js.
-Requisitos Previos
-Chart.js: Para la visualización de resultados en el gráfico de barras. Asegúrate de incluir Chart.js en tu proyecto.
-Cómo Ejecutar el Proyecto
-Incluye el código en un archivo HTML con soporte para JavaScript.
-Asegúrate de tener acceso a la librería Chart.js para visualizar el historial de resultados.
-Abre el archivo HTML en un navegador compatible.
-Notas
-Este proyecto utiliza localStorage para almacenar el historial de resultados, permitiendo que los datos persistan entre sesiones.
-La API de preguntas devuelve preguntas en formato JSON, que luego son interpretadas y mostradas al usuario en el cuestionario.
+Requisitos:
+
+Antes de ejecutar la aplicación, asegúrate de tener lo siguiente:
+
+Un navegador web moderno (por ejemplo, Chrome, Firefox)
+Conocimientos básicos de HTML, CSS y JavaScript
+Tecnologías Utilizadas
+HTML: Estructura básica de la aplicación.
+CSS: Estilos para la interfaz de usuario.
+JavaScript: Lógica de la aplicación y manejo de eventos.
+Axios: Para realizar solicitudes HTTP a la API.
+Bootstrap: Para estilos y diseño responsivo.
+Explicación del Código
+
+HTML (index.html)
+
+card: Estilos para los componentes de tarjeta.
+quiz-header: Estilos para el encabezado del quiz.
+JavaScript (main.js)
+El archivo JavaScript contiene la lógica del quiz:
+
+Obteniendo Preguntas: La función getQuestions obtiene preguntas de trivia de la API.
+Lógica del Juego: Las funciones manejan el inicio del quiz, la presentación de preguntas, la selección de respuestas y la visualización de resultados.
+
+Resultados:
+Las respuestas correctas se muestran en color verde y las incorrectas en color rojo.
+La sección Results muestra una gráfica de barras con los puntajes de intentos previos guardados en localStorage.
+
+Librerías y tecnologías usadas:
+Axios para realizar las peticiones HTTP.
+Bootstrap 5.3 para la interfaz de usuario.
+Chart.js para mostrar las gráficas de estadísticas.
+
+Instalación
+No requiere instalación previa, unicamente abre el archivo index.html en un navegador para ejecutar la presente aplicación.
+
+
