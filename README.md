@@ -80,4 +80,7 @@ Chart.js para mostrar las gráficas de estadísticas.
 Instalación
 No requiere instalación previa, unicamente abre el archivo index.html en un navegador para ejecutar la presente aplicación.
 
+Licencia
+Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
+
 
