@@ -81,25 +81,28 @@ Bootstrap 5.3 para la interfaz de usuario.
 Chart.js para mostrar las gráficas de estadísticas.
 
 Instalación
-No requiere instalación previa, unicamente abre el archivo index.html en un navegador para ejecutar la presente aplicación.
+El presente quiz no es una aplicación que requiera instalación previa, unicamente abre el archivo index.html en un navegador para ejecutarla.
 
-Contribuciones
+Contribuciones:
+
 Si deseas contribuir a Quiz SPA, sigue estos pasos:
 
 Haz un fork del repositorio.
+
 Crea una nueva rama (git checkout -b feature/nueva-funcionalidad).
 Realiza tus cambios y haz commit de ellos (git commit -m 'Agrega nueva funcionalidad').
 Sube tus cambios a tu fork (git push origin feature/nueva-funcionalidad).
 Abre un Pull Request en el repositorio original.
 
-Licencia
+Licencia:
+
 Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
 
 Autores y Agradecimientos:
 
 [Catalina Baquerizo Lucero] - Desarrollador principal de la aplicación.
 
-Agradecimientos a Open Trivia DB API por proporcionar las preguntas de trivia, y a los equipos de Bootstrap y Chart.js por las herramientas de diseño y gráficos.
+Agradecimientos a Open Trivia DB API por proporcionar las preguntas de trivia, a los equipos de Bootstrap y Chart.js por las herramientas de diseño y gráficos.
 
 
 
